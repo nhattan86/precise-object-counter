@@ -5,7 +5,7 @@
 ![RISC-V](https://img.shields.io/badge/RISC--V-Compatible-green.svg)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--01--29-brightgreen)
 
-A state-of-the-art precision counting system that combines YOLO object detection with ByteTrack, currently the most advanced multi-object tracking algorithm, and innovative ROI-based methodology. Through extensive research and empirical validation, this implementation achieves unprecedented accuracy in bidirectional counting, particularly excelling in challenging environments where traditional methods often fail. My approach integrates real-time detection precision with ByteTrack's superior tracking capabilities, resulting in a high-precision object detection and counting system for diverse applications.
+A state-of-the-art precision counting system that combines YOLO/ONNX/CVIMODEL object detection with ByteTrack, currently the most advanced multi-object tracking algorithm, and innovative ROI-based methodology. Through extensive research and empirical validation, this implementation achieves unprecedented accuracy in bidirectional counting, particularly excelling in challenging environments where traditional methods often fail. My approach integrates real-time detection precision with ByteTrack's superior tracking capabilities, resulting in a high-precision object detection and counting system for diverse applications.
 
 ## Research Background
 
@@ -13,6 +13,7 @@ This project emerged from intensive research and experimentation in solving the 
 
 - Accurate bidirectional counting in crowded scenarios
 - Robust tracking in varying lighting conditions (day/night, indoor/outdoor)
+- Lightweight for hardware with limited resources and processing power
 - Precise object differentiation in overlapping situations
 - Real-time processing capability on embedded systems
 - Adaptive performance in high-traffic environments
