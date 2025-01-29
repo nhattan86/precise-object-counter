@@ -246,7 +246,7 @@ python analyze.py
 
 Created by: nhattan86
 
-Last Updated: 2025-01-29 ⏲️ UTC  *(Updated to current time)*
+Last Updated: 2025-01-29 ⏲ UTC
 
 Copyright (c) 2025 nhattan86
 
