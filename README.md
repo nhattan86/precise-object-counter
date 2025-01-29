@@ -130,12 +130,7 @@ This project emerged from intensive research and experimentation in solving the 
 ![ROI Method](docs/images/roi_method.png)
 *Figure 1: ROI-based counting methodology illustration*
 
-The system employs a sophisticated Region of Interest (ROI) approach:
-
-![ROI Implementation](docs/images/roi.png)
-*Figure 2: ROI implementation and counting zones*
-
-The ROI counting equation:
+The system employs a sophisticated Region of Interest (ROI) approach using the ROI counting equation:
 ```python
 def obj_in_roi(obj, roi):
     x = obj.x + obj.w // 2
@@ -148,6 +143,13 @@ def obj_in_roi(obj, roi):
         return 0       # Inside ROI
     return None       # Outside ROI
 ```
+
+### Understanding IOU (Intersection over Union)
+
+![IOU Calculation](docs/images/iou.png)
+*Figure 2: IOU calculation visualization in object tracking*
+
+The IOU metric is fundamental to my counting system's accuracy. The IOU equation plays a crucial role in our counting method's precision, particularly when integrated with ByteTrack's advanced tracking capabilities. The carefully tuned thresholds (0.45 for detection and 0.8 for tracking) provide an optimal balance between accuracy and processing efficiency, making this implementation particularly effective in challenging scenarios like school bus monitoring and crowd counting.
 
 ## Technical Parameters and Optimization
 
