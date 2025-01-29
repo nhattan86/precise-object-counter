@@ -241,7 +241,7 @@ python analyze.py
 - Average FPS: 10-40 on RISC-V platform
 - Average CPU Temperature : below 45 °C
 - Power Consumption: <5W
-- Counting Accuracy: >96% in tested scenarios, 100% accuracy can be attained with a perfectly accurate model.
+- Counting Accuracy: >96% in tested scenarios, 100% accuracy can be attained with a perfectly accurate model
 
 ## Author
 
