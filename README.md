@@ -51,7 +51,7 @@ For objects that are horizontally aligned, the function then determines their ve
 
 By tracking how these position values change over time, the system can determine the direction of movement and maintain precise counts.
 
-### Understanding IOU (Intersection over Union)
+### Understanding IoU (Intersection over Union)
 
 ![IOU Calculation](docs/images/iou.png)
 *Figure 2: IoU calculation visualization in object tracking*
