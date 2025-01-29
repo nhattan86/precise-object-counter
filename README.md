@@ -244,7 +244,7 @@ python analyze.py
 
 ## Author
 
-Created by: nhattan86  
+Created by: nhattan86
 Last Updated: 2025-01-29 01:49:55 UTC
 Copyright (c) 2025 nhattan86
 
