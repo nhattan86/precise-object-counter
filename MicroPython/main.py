@@ -6,7 +6,7 @@ import camera  # MicroPython camera module
 import tflite  # TFLite for MicroPython
 
 class MicroObjectCounter:
-       def __init__(self):
+    def __init__(self):
         # Get current time
         current_time = self.get_formatted_time()
         
