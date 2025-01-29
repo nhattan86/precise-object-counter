@@ -6,13 +6,31 @@ import camera  # MicroPython camera module
 import tflite  # TFLite for MicroPython
 
 class MicroObjectCounter:
-    def __init__(self):
+       def __init__(self):
+        # Get current time
+        current_time = self.get_formatted_time()
+        
         # Print initialization info
         print("=" * 40)
+        print(f"Current Date and Time (UTC): {current_time}")
+        print(f"Current User's Login: nhattan86")  # Fixed user
         print("Object Counter Initialization")
-        print(f"Date: 2025-01-29 08:30:56")
-        print(f"User: nhattan86")
         print("=" * 40)
+        
+    def get_formatted_time(self):
+        """Get current time formatted as YYYY-MM-DD HH:MM:SS"""
+        try:
+            # Get current time from RTC
+            rtc = machine.RTC()
+            year, month, day, weekday, hours, minutes, seconds, subseconds = rtc.datetime()
+            
+            # Format time string
+            return "{:04d}-{:02d}-{:02d} {:02d}:{:02d}:{:02d}".format(
+                year, month, day, hours, minutes, seconds
+            )
+        except:
+            # Fallback if RTC is not available
+            return "RTC not available"
 
         # Setup hardware
         self.setup_camera()
