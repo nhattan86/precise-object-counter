@@ -143,13 +143,23 @@ def obj_in_roi(obj, roi):
         return 0       # Inside ROI
     return None       # Outside ROI
 ```
+The obj_in_roi function is designed to determine an object's position relative to a defined counting zone (ROI - Region of Interest). First, it calculates the center point of the detected object by finding the middle point of its bounding box. This single point represents the object's position more reliably than using its entire area.
+
+The function then performs two crucial checks: First, it verifies if the object is horizontally aligned with the counting zone by checking if its center X-coordinate falls within the ROI's left and right boundaries. If the object isn't horizontally aligned, it's considered outside our area of interest and ignored (returns None).
+
+For objects that are horizontally aligned, the function then determines their vertical position by comparing their center Y-coordinate with the ROI's top and bottom boundaries. This check classifies the object's position into three categories:
+- Above the counting zone (returns -1)
+- Inside the counting zone (returns 0)
+- Below the counting zone (returns 1)
+
+By tracking how these position values change over time, the system can determine the direction of movement and maintain precise counts.
 
 ### Understanding IOU (Intersection over Union)
 
 ![IOU Calculation](docs/images/iou.png)
-*Figure 2: IOU calculation visualization in object tracking*
+*Figure 2: IoU calculation visualization in object tracking*
 
-The IOU metric is fundamental to my counting system's accuracy. The IOU equation plays a crucial role in our counting method's precision, particularly when integrated with ByteTrack's advanced tracking capabilities. The carefully tuned thresholds (0.45 for detection and 0.8 for tracking) provide an optimal balance between accuracy and processing efficiency, making this implementation particularly effective in challenging scenarios like school bus monitoring and crowd counting.
+The IoU metric is fundamental to my counting system's accuracy. The IoU equation plays a crucial role in our counting method's precision, particularly when integrated with ByteTrack's advanced tracking capabilities. The carefully tuned thresholds (0.45 for detection and 0.8 for tracking) provide an optimal balance between accuracy and processing efficiency, making this implementation particularly effective in challenging scenarios like school bus monitoring and crowd counting.
 
 ## Technical Parameters and Optimization
 
