@@ -19,110 +19,6 @@ This project emerged from intensive research and experimentation in solving the 
 - Resilient tracking through occlusions and complex movements
 - High accuracy in varying weather conditions (for outdoor applications)
 
-## Key Applications
-
-### Transportation and Traffic
-- **Public Transit**: 
-  - Real-time passenger counting on buses, trains, and metros
-  - Platform occupancy monitoring at stations
-  - Queue length estimation at transit stops
-- **Traffic Analysis**:
-  - Vehicle counting at intersections
-  - Lane usage statistics
-  - Traffic flow pattern analysis
-  - Pedestrian crossing frequency monitoring
-- **Parking Solutions**:
-  - Available parking space counting
-  - Vehicle entry/exit tracking
-  - Parking duration analysis
-
-### Retail Analytics
-- Customer flow analysis in supermarkets and stores
-- Queue management at checkout counters
-- Shopping pattern analysis
-- Peak hour traffic monitoring
-- Conversion rate tracking (entrance vs. purchase)
-
-### Educational Institutions
-
-#### Campus Safety & Monitoring
-- **Attendance Tracking**:
-  - Classroom occupancy monitoring
-  - Library usage statistics
-  - Cafeteria capacity management
-  - Real-time campus population tracking
-  - After-hours facility usage monitoring
-
-#### School Transportation Safety
-- **School Bus Safety System**:
-  - Real-time student boarding/alighting verification
-  - Missing student detection
-  - Wrong stop alerts
-  - Sleep child check system
-  - Emergency situation monitoring
-  - Unauthorized exit detection
-  - Driver assistance alerts
-
-#### Smart Attendance Solutions
-- **Automated Tracking**:
-  - School bus attendance logging
-  - Class transition monitoring
-  - Late arrival reporting
-  - Early departure alerts
-  - Special event attendance
-
-#### Safety Compliance & Analytics
-- **Safety Measures**:
-  - Social distancing monitoring
-  - Emergency evacuation counting
-  - Maximum capacity enforcement
-  - Suspicious behavior detection
-  - Unauthorized access prevention
-
-#### Parent Communication System
-- **Real-time Updates**:
-  - Bus boarding notifications
-  - Arrival time estimates
-  - Route delay alerts
-  - Emergency situation updates
-  - Location tracking services
-
-#### Transportation Management
-- **Fleet Optimization**:
-  - Route efficiency analysis
-  - Capacity utilization reports
-  - Peak time management
-  - Driver performance metrics
-  - Fuel efficiency correlation
-
-### Industrial Applications
-- Production line item counting
-- Warehouse inventory movement tracking
-- Worker flow analysis in restricted areas
-- Quality control checkpoints
-- Assembly line monitoring
-
-### Security and Safety
-- Crowd density monitoring at events
-- Emergency exit usage tracking
-- Restricted area access monitoring
-- Building occupancy compliance
-- Social distance monitoring
-
-### Smart City Applications
-- Pedestrian flow analysis in urban areas
-- Public space utilization metrics
-- Smart building occupancy monitoring
-- Public facility usage tracking
-- Event crowd management
-
-### Research and Analytics
-- Behavioral studies
-- Movement pattern analysis
-- Traffic flow optimization
-- Urban planning data collection
-- Facility utilization research
-
 ## System Architecture
 
 ### ROI-Based Counting Methodology
@@ -235,6 +131,110 @@ Advanced analytics:
 python analyze.py
 ```
 
+## Key Applications
+
+### Transportation and Traffic
+- **Public Transit**: 
+  - Real-time passenger counting on buses, trains, and metros
+  - Platform occupancy monitoring at stations
+  - Queue length estimation at transit stops
+- **Traffic Analysis**:
+  - Vehicle counting at intersections
+  - Lane usage statistics
+  - Traffic flow pattern analysis
+  - Pedestrian crossing frequency monitoring
+- **Parking Solutions**:
+  - Available parking space counting
+  - Vehicle entry/exit tracking
+  - Parking duration analysis
+
+### Retail Analytics
+- Customer flow analysis in supermarkets and stores
+- Queue management at checkout counters
+- Shopping pattern analysis
+- Peak hour traffic monitoring
+- Conversion rate tracking (entrance vs. purchase)
+
+### Educational Institutions
+
+#### Campus Safety & Monitoring
+- **Attendance Tracking**:
+  - Classroom occupancy monitoring
+  - Library usage statistics
+  - Cafeteria capacity management
+  - Real-time campus population tracking
+  - After-hours facility usage monitoring
+
+#### School Transportation Safety
+- **School Bus Safety System**:
+  - Real-time student boarding/alighting verification
+  - Missing student detection
+  - Wrong stop alerts
+  - Sleep child check system
+  - Emergency situation monitoring
+  - Unauthorized exit detection
+  - Driver assistance alerts
+
+#### Smart Attendance Solutions
+- **Automated Tracking**:
+  - School bus attendance logging
+  - Class transition monitoring
+  - Late arrival reporting
+  - Early departure alerts
+  - Special event attendance
+
+#### Safety Compliance & Analytics
+- **Safety Measures**:
+  - Social distancing monitoring
+  - Emergency evacuation counting
+  - Maximum capacity enforcement
+  - Suspicious behavior detection
+  - Unauthorized access prevention
+
+#### Parent Communication System
+- **Real-time Updates**:
+  - Bus boarding notifications
+  - Arrival time estimates
+  - Route delay alerts
+  - Emergency situation updates
+  - Location tracking services
+
+#### Transportation Management
+- **Fleet Optimization**:
+  - Route efficiency analysis
+  - Capacity utilization reports
+  - Peak time management
+  - Driver performance metrics
+  - Fuel efficiency correlation
+
+### Industrial Applications
+- Production line item counting
+- Warehouse inventory movement tracking
+- Worker flow analysis in restricted areas
+- Quality control checkpoints
+- Assembly line monitoring
+
+### Security and Safety
+- Crowd density monitoring at events
+- Emergency exit usage tracking
+- Restricted area access monitoring
+- Building occupancy compliance
+- Social distance monitoring
+
+### Smart City Applications
+- Pedestrian flow analysis in urban areas
+- Public space utilization metrics
+- Smart building occupancy monitoring
+- Public facility usage tracking
+- Event crowd management
+
+### Research and Analytics
+- Behavioral studies
+- Movement pattern analysis
+- Traffic flow optimization
+- Urban planning data collection
+- Facility utilization research
+
 ## Performance Metrics
 
 - Average FPS: 10-40 on RISC-V platform
@@ -246,7 +246,7 @@ python analyze.py
 
 Created by: nhattan86
 
-Last Updated: 2025-01-29 ⏲ UTC
+Last Updated: 2025-01-29 22:39:12 UTC
 
 Copyright (c) 2025 nhattan86
 
