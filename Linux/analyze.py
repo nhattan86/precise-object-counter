@@ -1,4 +1,4 @@
-% python analyze.py --camera 0 --model ./models/yolov8s.onnx
+# python analyze.py --camera 0 --model ./models/yolov8s.onnx
 
 import cv2
 import numpy as np
