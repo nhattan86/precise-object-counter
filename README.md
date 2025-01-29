@@ -135,7 +135,8 @@ python analyze.py
 ## Key Applications
 
 ### Transportation and Traffic
-- **Public Transit**: 
+- **Public Transit**:
+  - INTELSCHOOLBUS 
   - Real-time passenger counting on buses, trains, and metros
   - Platform occupancy monitoring at stations
   - Queue length estimation at transit stops
